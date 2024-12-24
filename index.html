@@ -1,0 +1,155 @@
+
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kipp - Seus Encartes Digitais</title>
+    <style>
+        :root {
+            --primary-color: #257f49;
+            --light-green: #e8f5e9;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: system-ui, -apple-system, sans-serif;
+        }
+
+        body {
+            line-height: 1.6;
+        }
+
+        .hero {
+            background: linear-gradient(135deg, var(--primary-color), #1b5e36);
+            color: white;
+            padding: 6rem 1rem;
+            text-align: center;
+        }
+
+        .hero h1 {
+            font-size: 3rem;
+            margin-bottom: 1rem;
+        }
+
+        .hero p {
+            font-size: 1.2rem;
+            max-width: 600px;
+            margin: 0 auto 2rem;
+        }
+
+        .features {
+            padding: 4rem 1rem;
+            background: var(--light-green);
+        }
+
+        .features-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 2rem;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        .feature-card {
+            background: white;
+            padding: 2rem;
+            border-radius: 10px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            text-align: center;
+        }
+
+        .feature-card img {
+            width: 64px;
+            height: 64px;
+            margin-bottom: 1rem;
+        }
+
+        .download-section {
+            padding: 4rem 1rem;
+            text-align: center;
+        }
+
+        .download-section h2 {
+            color: var(--primary-color);
+            margin-bottom: 2rem;
+        }
+
+        .app-preview {
+            max-width: 300px;
+            border-radius: 20px;
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+        }
+
+        .button {
+            display: inline-block;
+            background: var(--primary-color);
+            color: white;
+            padding: 1rem 2rem;
+            border-radius: 30px;
+            text-decoration: none;
+            font-weight: bold;
+            transition: transform 0.2s;
+        }
+
+        .button:hover {
+            transform: translateY(-2px);
+        }
+
+        footer {
+            background: #333;
+            color: white;
+            text-align: center;
+            padding: 2rem;
+            margin-top: 4rem;
+        }
+    </style>
+</head>
+<body>
+<section class="hero">
+    <h1>Kipp</h1>
+    <p>Descubra as melhores ofertas dos supermercados da sua região em um só lugar</p>
+    <a href="https://play.google.com/store/apps/details?id=br.com.kipp" class="button">Baixe Agora</a>
+</section>
+
+<section class="features">
+    <div class="features-grid">
+        <div class="feature-card">
+            <img src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCA2NCA2NCI+PGcgdHJhbnNmb3JtPSJ0cmFuc2xhdGUoMiwyKSBzY2FsZSgxLjUpIj48cmVjdCB4PSI1IiB5PSIyIiB3aWR0aD0iMzAiIGhlaWdodD0iNDAiIGZpbGw9IiMyNTdmNDkiIHJ4PSIyIi8+PHJlY3QgeD0iMTAiIHk9IjgiIHdpZHRoPSIyMCIgaGVpZ2h0PSI0IiBmaWxsPSJ3aGl0ZSIvPjxyZWN0IHg9IjEwIiB5PSIxNiIgd2lkdGg9IjIwIiBoZWlnaHQ9IjQiIGZpbGw9IndoaXRlIi8+PHJlY3QgeD0iMTAiIHk9IjI0IiB3aWR0aD0iMjAiIGhlaWdodD0iNCIgZmlsbD0id2hpdGUiLz48cmVjdCB4PSIxMCIgeT0iMzIiIHdpZHRoPSIyMCIgaGVpZ2h0PSI0IiBmaWxsPSJ3aGl0ZSIvPjwvZz48L3N2Zz4=" alt="Ícone Encarte">
+            <h3>Encartes Digitais</h3>
+            <p>Acesse todos os encartes e promoções dos principais supermercados</p>
+        </div>
+        <div class="feature-card">
+            <img src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCA2NCA2NCI+PGcgdHJhbnNmb3JtPSJ0cmFuc2xhdGUoMTIsMikgc2NhbGUoMS41KSI+PHBhdGggZD0iTTIwLDAgQzExLjcxNTcsMCA1LDYuNzE1NyA1LDE1IEM1LDI1LjcxODcgMjAsNDAgMjAsNDAgQzIwLDQwIDM1LDI1LjcxODcgMzUsMTUgQzM1LDYuNzE1NyAyOC4yODQzLDAgMjAsMCBaIiBmaWxsPSIjMjU3ZjQ5Ii8+PGNpcmNsZSBjeD0iMjAiIGN5PSIxNSIgcj0iNiIgZmlsbD0id2hpdGUiLz48L2c+PC9zdmc+" alt="Ícone Localização">
+            <h3>Ofertas Locais</h3>
+            <p>Encontre as melhores ofertas próximas a você</p>
+        </div>
+        <div class="feature-card">
+            <img src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCA2NCA2NCI+PGcgdHJhbnNmb3JtPSJ0cmFuc2xhdGUoMTIsMikgc2NhbGUoMS41KSI+PHBhdGggZD0iTTIwLDQwIEMyMi4yMDkxLDQwIDI0LDM4LjIwOTEgMjQsMzYgTDE2LDM2IEMxNiwzOC4yMDkxIDE3Ljc5MDksNDAgMjAsNDAgWiIgZmlsbD0iIzI1N2Y0OSIvPjxwYXRoIGQ9Ik0zNSwzNCBMNSwzNCBDNSwzNCA4LDMxIDgsMzAgTDgsMTcgQzgsOS44MiAxMy44Miw0IDIxLDQgQzI4LjE4LDQgMzQsOS44MiAzNCwxNyBMMzQsMzAgQzM0LDMxIDM1LDM0IDM1LDM0IFoiIGZpbGw9IiMyNTdmNDkiLz48Y2lyY2xlIGN4PSIyMCIgY3k9IjQiIHI9IjQiIGZpbGw9IiMyNTdmNDkiLz48L2c+PC9zdmc+" alt="Ícone Notificação">
+            <h3>Notificações</h3>
+            <p>Receba alertas de novos encartes cadastrados</p>
+        </div>
+    </div>
+</section>
+
+<section class="download-section" id="download">
+    <h2>Economize tempo e dinheiro com o Kipp</h2>
+    <div class="image-container">
+        <img src="src/images/kipp_two.png" alt="Preview do App 2" class="app-preview">
+        <img src="src/images/kipp.png" alt="Preview do App 2" class="app-preview">
+        <img src="src/images/kipp_one.png" alt="Preview do App" class="app-preview">
+    </div>
+    <p style="margin: 2rem 0;">
+        Disponível para Android
+    </p>
+    <a href="https://play.google.com/store/apps/details?id=br.com.kipp" class="button">Download no Google Play</a>
+</section>
+
+
+<footer>
+    <p>&copy; 2024 Kipp - Todos os direitos reservados</p>
+</footer>
+</body>
+</html>
